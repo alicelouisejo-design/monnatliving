@@ -120,7 +120,7 @@ export const ProductDetail: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
                 {/* Quantity Adjustment */}
-                <div className="flex items-center justify-between border border-brand-grey/40 bg-white px-3 py-3 w-full sm:w-32">
+                <div className="flex items-center justify-between border border-brand-grey/40 bg-white px-3 py-3 w-full sm:w-32 shrink-0">
                   <button
                     type="button"
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -141,11 +141,21 @@ export const ProductDetail: React.FC = () => {
                 {/* Add To Bag Button */}
                 <button
                   onClick={handleAddToCart}
-                  className="flex-1 flex items-center justify-center gap-3 bg-brand-slate py-4 text-xs font-semibold uppercase tracking-widest text-white hover:bg-brand-terracotta transition-colors shadow-xs rounded-none"
+                  className="flex-1 flex items-center justify-center gap-2 border border-brand-slate py-4 text-xs font-semibold uppercase tracking-widest text-brand-slate hover:bg-brand-slate hover:text-white transition-colors rounded-none"
                 >
-                  <ShoppingBag size={16} />
+                  <ShoppingBag size={14} />
                   <span>Add To Bag</span>
                 </button>
+
+                {/* Buy Now Button */}
+                <a
+                  href={product.stripeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-brand-terracotta py-4 text-xs font-semibold uppercase tracking-widest text-white hover:bg-brand-slate transition-colors shadow-xs rounded-none text-center"
+                >
+                  <span>Buy Now</span>
+                </a>
               </div>
             </div>
 

@@ -9,6 +9,7 @@ export interface Product {
   details: string[]
   materials: string
   dimensions: string
+  stripeUrl: string
 }
 
 export const products: Product[] = [
@@ -27,7 +28,8 @@ export const products: Product[] = [
       "Woven in a historic, family-owned mill in Portugal"
     ],
     materials: "100% Organic French Flax",
-    dimensions: "50\" x 70\""
+    dimensions: "50\" x 70\"",
+    stripeUrl: "https://buy.stripe.com/8x23cv9Ix9DIdNnghV8Vi00"
   },
   {
     id: "hand-cast-ceramic-pitcher",
@@ -44,7 +46,8 @@ export const products: Product[] = [
       "Each piece is individually thrown, featuring subtle unique details"
     ],
     materials: "Stoneware clay",
-    dimensions: "6\" Diameter x 8.5\" Height (Holds 44 oz)"
+    dimensions: "6\" Diameter x 8.5\" Height (Holds 44 oz)",
+    stripeUrl: "https://buy.stripe.com/7sY3cvf2R2bg9x76Hl8Vi01"
   },
   {
     id: "belgian-linen-pillow-cover",
@@ -61,7 +64,8 @@ export const products: Product[] = [
       "Machine washable and colorfast"
     ],
     materials: "100% Belgian Flax",
-    dimensions: "20\" x 20\""
+    dimensions: "20\" x 20\"",
+    stripeUrl: "https://buy.stripe.com/8x2dR9f2RcPU38Jd5J8Vi02"
   },
   {
     id: "sandstone-soy-candle-set",
@@ -78,7 +82,8 @@ export const products: Product[] = [
       "Hand-textured ceramic containers designed for secondary reuse"
     ],
     materials: "Soy Wax, Stoneware Container, Wood Wick",
-    dimensions: "3\" Diameter x 3\" Height (6 oz per candle)"
+    dimensions: "3\" Diameter x 3\" Height (6 oz per candle)",
+    stripeUrl: "https://buy.stripe.com/8x24gzg6V6rwbFf6Hl8Vi03"
   },
   {
     id: "travertine-incense-holder",
@@ -95,7 +100,8 @@ export const products: Product[] = [
       "Naturally heat-resistant and easily wiped clean"
     ],
     materials: "Italian Travertine Stone",
-    dimensions: "10\" Length x 3.5\" Width x 0.75\" Height"
+    dimensions: "10\" Length x 3.5\" Width x 0.75\" Height",
+    stripeUrl: "https://buy.stripe.com/dRm7sL9Ix9DI9x71n18Vi04"
   },
   {
     id: "cotton-waffle-bath-towels",
@@ -112,6 +118,7 @@ export const products: Product[] = [
       "Integrated hanging loop for easy storage"
     ],
     materials: "100% Organic Turkish Cotton",
-    dimensions: "30\" x 56\" each"
+    dimensions: "30\" x 56\" each",
+    stripeUrl: "https://buy.stripe.com/9B65kDcUJbLQaBb8Pt8Vi05"
   }
 ]

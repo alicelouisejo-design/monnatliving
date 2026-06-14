@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { X, Plus, Minus, Trash2, ShoppingBag, ArrowRight } from 'lucide-react'
 import { useCart } from '../context/CartContext'
+import { products } from '../data/products'
 
 export const CartDrawer: React.FC = () => {
   const {
@@ -12,6 +12,11 @@ export const CartDrawer: React.FC = () => {
     removeFromCart,
     cartTotal,
   } = useCart()
+
+  // Find Stripe payment link for the primary checkout item (first item in cart)
+  const checkoutUrl = cartItems.length > 0 
+    ? products.find((p) => p.id === cartItems[0].id)?.stripeUrl || '#'
+    : '#'
 
   const drawerRef = useRef<HTMLDivElement>(null)
 
@@ -153,14 +158,16 @@ export const CartDrawer: React.FC = () => {
               </p>
               
               <div className="mt-6">
-                <Link
-                  to="/checkout"
+                <a
+                  href={checkoutUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsCartOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full bg-brand-slate py-4 text-xs font-semibold uppercase tracking-widest text-white shadow-xs hover:bg-brand-terracotta transition-all duration-300 rounded-none group"
+                  className="flex items-center justify-center gap-2 w-full bg-brand-slate py-4 text-xs font-semibold uppercase tracking-widest text-white shadow-xs hover:bg-brand-terracotta transition-all duration-300 rounded-none group text-center"
                 >
                   <span>Proceed To Checkout</span>
                   <ArrowRight size={14} className="transform group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </div>
               
               <div className="mt-4 flex justify-center text-center text-xs text-brand-slate/60">
