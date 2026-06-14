@@ -119,45 +119,45 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Story Section - The Monnat Family Backstory */}
-      <section id="philosophy" className="bg-brand-slate text-brand-cream py-20 px-4 sm:px-6 lg:px-8 border-t border-brand-grey/25">
+      {/* Our Story Section */}
+      <section id="philosophy" className="bg-brand-cream/40 border-y border-brand-grey/15 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold block">Behind the Brand</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-white font-medium leading-tight">
-              Made for living, by a real family.
-            </h2>
-            <p className="text-sm text-brand-grey/80 leading-relaxed">
-              Monnat Living isn't a faceless corporation. We are a real family—two working professionals (an ex-CEO and a company director), an energetic three-year-old, and two very curious cats—who recently bought our first flat. Like many of you, we appreciate premium design but felt the real pinch of the cost-of-living squeeze.
-            </p>
-            <p className="text-sm text-brand-grey/80 leading-relaxed">
-              When furnishing our home, we wanted beautiful, long-lasting pieces—organic French flax blankets that withstand cats on the bed, stoneware pitchers that can survive a toddler's busy mornings, and travertine stone with raw geological character. But we refused to pay a 10x luxury markup just for a fancy logo.
-            </p>
-            <p className="text-sm text-brand-grey/80 leading-relaxed">
-              We started Monnat Living to solve our own problem: providing beautifully designed, tactile home essentials crafted by historic partner ateliers, offered at honest margins. No nonsense, just beautifully made goods built for real, everyday life.
-            </p>
+          {/* Left Column - Large Warm Imagery */}
+          <div className="lg:col-span-5 aspect-4/3 lg:aspect-square bg-brand-grey/10 overflow-hidden border border-brand-grey/15 shadow-sm">
+            <img
+              src="/product-lifestyle-stoneware.jpg"
+              alt="Monnat Living warm home detail"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
 
-          <div className="lg:col-span-6 bg-white/5 border border-brand-grey/20 p-8 sm:p-10 space-y-6 backdrop-blur-xs">
-            <h3 className="font-serif text-2xl text-white font-medium tracking-wide leading-relaxed">
-              "We wanted a lovely home without the luxury premium."
-            </h3>
-            <p className="text-xs text-brand-grey/70 italic leading-relaxed">
-              "Surrounding ourselves with natural textures brought a quiet grounding energy into our chaotic mornings. We wanted that same warmth for your home—priced so it doesn't make you wince."
-            </p>
-            <div className="pt-4 border-t border-brand-grey/15 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full overflow-hidden border border-brand-grey/25 bg-brand-cream/10">
-                <img
-                  src="/product-lifestyle-stoneware.jpg"
-                  alt="Monnat family table detail"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h4 className="text-xs font-semibold text-white uppercase tracking-wider">The Monnat Family</h4>
-                <p className="text-[10px] text-brand-grey/60 mt-0.5">Founders, Monnat Living</p>
-              </div>
+          {/* Right Column - Warm Personal Story */}
+          <div className="lg:col-span-7 space-y-6 lg:pl-6">
+            <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold block">Our Story</span>
+            
+            <h2 className="font-serif text-3xl sm:text-4xl text-brand-slate font-medium leading-tight">
+              A home should feel like home.<br />
+              <span className="italic text-brand-terracotta">Not a showroom.</span>
+            </h2>
+            
+            <div className="space-y-5 text-brand-slate/85 leading-relaxed text-sm">
+              <p>
+                Monnat Living was born in a first flat — two working professionals, a three-year-old, and two cats, trying to make a home without overpaying for logos. We realised that quality home goods shouldn't require a trust fund.
+              </p>
+              <p>
+                So we set out to find the best-made pieces from the best workshops — French flax linen, Portuguese stoneware, Turkish cotton — and price them so you can actually live with them.
+              </p>
+              <p className="font-serif text-base sm:text-lg text-brand-terracotta italic font-medium pt-2">
+                "Because a beautiful home and being smart with money shouldn't be at odds."
+              </p>
+            </div>
+            
+            <div className="pt-4 border-t border-brand-grey/15 flex items-center gap-3 text-xs text-brand-slate/60">
+              <span className="font-semibold uppercase tracking-wider text-brand-slate text-[10px]">The Monnat Family</span>
+              <span>•</span>
+              <span>Founders, Monnat Living</span>
             </div>
           </div>
           
