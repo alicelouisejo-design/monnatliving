@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* Official Monnat Living Design System Variables */
+  --ml-cream:       #F5F0EB;   /* Primary background */
+  --ml-cream-dark:  #EDE6DD;   /* Card backgrounds */
+  --ml-slate:       #3A3A3A;   /* Body text */
+  --ml-terracotta:  #C8674B;   /* CTAs, accents */
+  --ml-sage:        #8A9A8A;   /* Secondary accents, microcopy */
+  --ml-olive:       #6B7D5A;   /* Deep accent, footer areas */
+  --ml-warm-grey:   #B8B0A8;   /* Borders, subdued text */
+  --ml-ink:         #2C2C2C;   /* Headings */
+  --ml-white:       #FAFAF8;   /* Product cards, overlays */
+  
+  --ml-font-heading: 'Playfair Display', Georgia, serif;
+  --ml-font-body:    'Inter', 'Helvetica Neue', Arial, sans-serif;
+  
+  --ml-border-radius: 4px;
+  --ml-border-color: rgba(184, 176, 168, 0.3);
+}
+
+@theme {
+  --color-brand-cream: var(--ml-cream);
+  --color-brand-cream-dark: var(--ml-cream-dark);
+  --color-brand-slate: var(--ml-slate);
+  --color-brand-terracotta: var(--ml-terracotta);
+  --color-brand-sage: var(--ml-sage);
+  --color-brand-olive: var(--ml-olive);
+  --color-brand-grey: var(--ml-warm-grey);
+  --color-brand-ink: var(--ml-ink);
+  --color-brand-white: var(--ml-white);
+  
+  --font-serif: var(--ml-font-heading);
+  --font-sans: var(--ml-font-body);
+}
+
+/* Custom Base Styles */
+body {
+  font-family: var(--ml-font-body);
+  background-color: var(--ml-cream);
+  color: var(--ml-ink);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
