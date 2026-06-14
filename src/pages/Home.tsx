@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowDown, Check, Percent, Heart, Award } from 'lucide-react'
+import { ArrowDown, Percent, Heart, Award } from 'lucide-react'
 import { products } from '../data/products'
 import { ProductCard } from '../components/ProductCard'
 
@@ -119,68 +119,45 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Philosophy Section - "The Margin Difference" */}
+      {/* Our Story Section - The Monnat Family Backstory */}
       <section id="philosophy" className="bg-brand-slate text-brand-cream py-20 px-4 sm:px-6 lg:px-8 border-t border-brand-grey/25">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold block">Radical Transparency</span>
+          <div className="lg:col-span-6 space-y-6">
+            <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold block">Behind the Brand</span>
             <h2 className="font-serif text-3xl sm:text-4xl text-white font-medium leading-tight">
-              Why traditional luxury is broken.
+              Made for living, by a real family.
             </h2>
             <p className="text-sm text-brand-grey/80 leading-relaxed">
-              Luxury home boutiques aren't expensive because the clay, stone, or linen is rare. They are expensive because of an outdated retail system. Traditional brands spend millions on brand logos, celebrity campaigns, high-rent storefronts, and middleman distributors.
+              Monnat Living isn't a faceless corporation. We are a real family—two working professionals (an ex-CEO and a company director), an energetic three-year-old, and two very curious cats—who recently bought our first flat. Like many of you, we appreciate premium design but felt the real pinch of the cost-of-living squeeze.
             </p>
             <p className="text-sm text-brand-grey/80 leading-relaxed">
-              By working directly with the very same family-owned workshops and mills, we eliminate everything that doesn't add actual value to your home. Same wool, same linen, honest prices.
+              When furnishing our home, we wanted beautiful, long-lasting pieces—organic French flax blankets that withstand cats on the bed, stoneware pitchers that can survive a toddler's busy mornings, and travertine stone with raw geological character. But we refused to pay a 10x luxury markup just for a fancy logo.
+            </p>
+            <p className="text-sm text-brand-grey/80 leading-relaxed">
+              We started Monnat Living to solve our own problem: providing beautifully designed, tactile home essentials crafted by historic partner ateliers, offered at honest margins. No nonsense, just beautifully made goods built for real, everyday life.
             </p>
           </div>
 
-          <div className="lg:col-span-7 bg-white/5 border border-brand-grey/20 p-6 sm:p-8 space-y-8 backdrop-blur-xs">
-            <h3 className="font-serif text-xl text-white font-medium text-center border-b border-brand-grey/15 pb-4">
-              Markup Breakdown
+          <div className="lg:col-span-6 bg-white/5 border border-brand-grey/20 p-8 sm:p-10 space-y-6 backdrop-blur-xs">
+            <h3 className="font-serif text-2xl text-white font-medium tracking-wide leading-relaxed">
+              "We wanted a lovely home without the luxury premium."
             </h3>
-            
-            <div className="grid grid-cols-2 gap-6 text-center">
-              
-              {/* Traditional Luxury */}
-              <div className="space-y-4 border-r border-brand-grey/15 pr-4">
-                <span className="text-[10px] uppercase tracking-widest text-brand-grey font-semibold">Traditional Retail</span>
-                <div className="text-4xl sm:text-5xl font-mono text-brand-grey font-light">5–10x</div>
-                <p className="text-xs text-brand-grey/60 max-w-xs mx-auto">
-                  Overpriced markups used to cover logo licensing, middle distributors, and retail leases.
-                </p>
-                <div className="space-y-2 pt-4">
-                  <div className="flex items-center gap-2 justify-center text-xs text-brand-grey/85">
-                    <span className="w-1.5 h-1.5 bg-brand-terracotta rounded-full"></span>
-                    <span>$250+ Throw Blankets</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center text-xs text-brand-grey/85">
-                    <span className="w-1.5 h-1.5 bg-brand-terracotta rounded-full"></span>
-                    <span>$150+ Stoneware Pitchers</span>
-                  </div>
-                </div>
+            <p className="text-xs text-brand-grey/70 italic leading-relaxed">
+              "Surrounding ourselves with natural textures brought a quiet grounding energy into our chaotic mornings. We wanted that same warmth for your home—priced so it doesn't make you wince."
+            </p>
+            <div className="pt-4 border-t border-brand-grey/15 flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full overflow-hidden border border-brand-grey/25 bg-brand-cream/10">
+                <img
+                  src="/product-lifestyle-stoneware.jpg"
+                  alt="Monnat family table detail"
+                  className="w-full h-full object-cover"
+                />
               </div>
-
-              {/* Monnat Living */}
-              <div className="space-y-4 pl-4">
-                <span className="text-[10px] uppercase tracking-widest text-brand-terracotta font-semibold">Monnat Living</span>
-                <div className="text-4xl sm:text-5xl font-mono text-white font-semibold">2–3x</div>
-                <p className="text-xs text-brand-grey/60 max-w-xs mx-auto">
-                  Fair markups covering premium natural materials, artisan labor, and standard sustainable operations.
-                </p>
-                <div className="space-y-2 pt-4">
-                  <div className="flex items-center gap-2 justify-center text-xs text-white">
-                    <Check size={14} className="text-brand-terracotta" />
-                    <span>$120 Throw Blanket</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center text-xs text-white">
-                    <Check size={14} className="text-brand-terracotta" />
-                    <span>$75 Stoneware Pitcher</span>
-                  </div>
-                </div>
+              <div>
+                <h4 className="text-xs font-semibold text-white uppercase tracking-wider">The Monnat Family</h4>
+                <p className="text-[10px] text-brand-grey/60 mt-0.5">Founders, Monnat Living</p>
               </div>
-
             </div>
           </div>
           
