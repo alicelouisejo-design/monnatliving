@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monnat Living — Logo Concepts</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F0EB;
+    --cream-dark: #EDE6DD;
+    --slate: #3A3A3A;
+    --terracotta: #C8674B;
+    --sage: #8A9A8A;
+    --ink: #2C2C2C;
+    --warm-grey: #B8B0A8;
+    --white: #FAFAF8;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--slate);
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+  
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(184,176,168,0.3);
+  }
+  header h1 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+  header p {
+    font-size: 14px;
+    color: var(--warm-grey);
+    letter-spacing: 1px;
+  }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .concept-card {
+    background: var(--white);
+    border: 1px solid rgba(184,176,168,0.2);
+    border-radius: 6px;
+    padding: 40px;
+    transition: box-shadow 0.2s;
+  }
+  .concept-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .concept-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid var(--terracotta);
+  }
+  .concept-header h2 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: 0.5px;
+  }
+  .concept-header .badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    background: var(--cream-dark);
+    color: var(--sage);
+  }
+
+  .logo-preview {
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    margin-bottom: 20px;
+  }
+  .logo-preview svg, .logo-preview img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .concept-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--slate);
+    max-width: 600px;
+  }
+  .concept-desc strong {
+    color: var(--ink);
+  }
+
+  .dark-preview {
+    background: #2C2C2C;
+  }
+  .dark-preview text, .dark-preview .v1-wordmark, 
+  .dark-preview .v2-wordmark, .dark-preview .v3-m {
+    fill: #FAFAF8 !important;
+  }
+
+  .comparison-note {
+    font-size: 12px;
+    color: var(--warm-grey);
+    text-align: center;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .files-list {
+    margin-top: 40px;
+    padding: 24px;
+    background: var(--cream-dark);
+    border-radius: 6px;
+  }
+  .files-list h3 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .files-list code {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
+    color: var(--slate);
+  }
+  .files-list code span {
+    color: var(--terracotta);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--warm-grey);
+    padding: 32px 0 16px;
+    border-top: 1px solid rgba(184,176,168,0.2);
+    margin-top: 48px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Monnat Living — Logo Concepts</h1>
+    <p>Three distinct directions for review · Tagline: "Made for living"</p>
+  </header>
+
+  <div class="concept-grid">
+
+    <!-- V1: The Leaf -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <h2>V1 · The Leaf</h2>
+        <span class="badge">Botanical</span>
+      </div>
+      <div class="logo-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 180" width="500" height="165">
+          <rect width="550" height="180" fill="#F5F0EB" rx="2"/>
+          <g transform="translate(65, 60)">
+            <path d="M10,50 C10,30 15,15 20,0" stroke="#C8674B" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M10,42 C0,38 -4,28 2,22 C8,16 14,20 14,28 C14,34 12,40 10,42Z" fill="#8A9A8A" opacity="0.85"/>
+            <path d="M14,30 C22,26 28,20 26,14 C24,8 18,10 16,18 C15,22 14,26 14,30Z" fill="#6B7D5A" opacity="0.7"/>
+            <path d="M16,16 C18,10 22,6 20,2 C18,-2 14,2 14,8 C14,12 15,14 16,16Z" fill="#8A9A8A" opacity="0.6"/>
+          </g>
+          <text x="130" y="78" font-family="Georgia, serif" font-size="36" fill="#2C2C2C" letter-spacing="5" font-weight="400">MONNAT</text>
+          <text x="130" y="112" font-family="Georgia, serif" font-size="36" fill="#2C2C2C" letter-spacing="5" font-weight="400">LIVING</text>
+          <line x1="130" y1="128" x2="350" y2="128" stroke="#C8674B" stroke-width="1.2" opacity="0.4"/>
+          <text x="240" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8A9A8A" letter-spacing="4" font-weight="300">MADE FOR LIVING</text>
+        </svg>
+      </div>
+      <div class="concept-desc">
+        <strong>Direction:</strong> Warm, natural, grounded. A minimalist olive-inspired botanical mark paired with a refined serif wordmark. The leaf sprig connects to the brand's natural, earthy palette (sage + terracotta). Best for lifestyle-forward contexts.
+      </div>
+    </div>
+
+    <!-- V2: The Monogram -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <h2>V2 · The Monogram</h2>
+        <span class="badge">Architectural</span>
+      </div>
+      <div class="logo-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 180" width="500" height="165">
+          <rect width="550" height="180" fill="#F5F0EB" rx="2"/>
+          <g transform="translate(50, 42)">
+            <path d="M8,80 L8,10 Q40,-5 72,10 L72,80 Z" fill="none" stroke="#C8674B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16,72 L16,24 L40,48 L40,48 L64,24 L64,72" fill="none" stroke="#2C2C2C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="82" r="2.5" fill="#C8674B"/>
+          </g>
+          <text x="150" y="78" font-family="Georgia, serif" font-size="30" fill="#2C2C2C" letter-spacing="8" font-weight="400">MONNAT</text>
+          <text x="150" y="110" font-family="Georgia, serif" font-size="30" fill="#2C2C2C" letter-spacing="8" font-weight="400">LIVING</text>
+          <line x1="150" y1="126" x2="360" y2="126" stroke="#8A9A8A" stroke-width="1" opacity="0.35"/>
+          <text x="255" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8A9A8A" letter-spacing="5" font-weight="300">MADE FOR LIVING</text>
+        </svg>
+      </div>
+      <div class="concept-desc">
+        <strong>Direction:</strong> Bold, architectural, confident. A custom geometric "M" monogram framed in a warm arch — like a doorway into a home. The monogram can stand alone as a favicon or social avatar. Best for brands that need a recognizable symbol.
+      </div>
+    </div>
+
+    <!-- V3: The Stack -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <h2>V3 · The Stack</h2>
+        <span class="badge">Editorial</span>
+      </div>
+      <div class="logo-preview">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="460" height="148">
+          <rect width="500" height="160" fill="#F5F0EB" rx="2"/>
+          <text x="55" y="105" font-family="Georgia, serif" font-size="100" fill="#2C2C2C" font-weight="400">M</text>
+          <text x="148" y="68" font-family="Georgia, serif" font-size="24" fill="#2C2C2C" letter-spacing="10" font-weight="400">ONNAT</text>
+          <text x="148" y="98" font-family="Georgia, serif" font-size="24" fill="#2C2C2C" letter-spacing="10" font-weight="400">IVING</text>
+          <line x1="133" y1="45" x2="133" y2="118" stroke="#C8674B" stroke-width="1.2" opacity="0.5"/>
+          <text x="148" y="128" font-family="Arial, sans-serif" font-size="9" fill="#8A9A8A" letter-spacing="5" font-weight="300">MADE FOR LIVING</text>
+          <line x1="148" y1="136" x2="410" y2="136" stroke="#B8B0A8" stroke-width="0.8" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="concept-desc">
+        <strong>Direction:</strong> Editorial, minimal, distinctive. An oversized "M" as the hero letter with "ONNAT" and "IVING" separated beside it by a thin terracotta line. It reads as a cohesive word but creates a striking visual signature. Best for fashion/design-forward contexts.
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark background previews -->
+  <div style="margin-top:32px;">
+    <p style="font-size:13px; color:var(--warm-grey); margin-bottom:16px; letter-spacing:0.5px;">On dark backgrounds:</p>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <div class="logo-preview dark-preview">
+        <svg viewBox="0 0 180 60" width="160" height="54">
+          <rect width="180" height="60" fill="#2C2C2C" rx="0"/>
+          <g transform="translate(8, 8) scale(0.38)">
+            <path d="M10,50 C10,30 15,15 20,0" stroke="#C8674B" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M10,42 C0,38 -4,28 2,22 C8,16 14,20 14,28 C14,34 12,40 10,42Z" fill="#8A9A8A" opacity="0.85"/>
+            <path d="M14,30 C22,26 28,20 26,14 C24,8 18,10 16,18 C15,22 14,26 14,30Z" fill="#6B7D5A" opacity="0.7"/>
+            <path d="M16,16 C18,10 22,6 20,2 C18,-2 14,2 14,8 C14,12 15,14 16,16Z" fill="#8A9A8A" opacity="0.6"/>
+          </g>
+          <text x="35" y="24" font-family="Georgia, serif" font-size="12" fill="#FAFAF8" letter-spacing="2" font-weight="400">MONNAT</text>
+          <text x="35" y="38" font-family="Georgia, serif" font-size="12" fill="#FAFAF8" letter-spacing="2" font-weight="400">LIVING</text>
+        </svg>
+      </div>
+      <div class="logo-preview dark-preview">
+        <svg viewBox="0 0 180 60" width="160" height="54">
+          <rect width="180" height="60" fill="#2C2C2C" rx="0"/>
+          <g transform="translate(3, 6) scale(0.34)">
+            <path d="M8,80 L8,10 Q40,-5 72,10 L72,80 Z" fill="none" stroke="#C8674B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16,72 L16,24 L40,48 L40,48 L64,24 L64,72" fill="none" stroke="#FAFAF8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="82" r="2.5" fill="#C8674B"/>
+          </g>
+          <text x="30" y="24" font-family="Georgia, serif" font-size="11" fill="#FAFAF8" letter-spacing="3" font-weight="400">MONNAT</text>
+          <text x="30" y="38" font-family="Georgia, serif" font-size="11" fill="#FAFAF8" letter-spacing="3" font-weight="400">LIVING</text>
+        </svg>
+      </div>
+      <div class="logo-preview dark-preview">
+        <svg viewBox="0 0 180 60" width="160" height="54">
+          <rect width="180" height="60" fill="#2C2C2C" rx="0"/>
+          <text x="18" y="40" font-family="Georgia, serif" font-size="38" fill="#FAFAF8" font-weight="400">M</text>
+          <text x="52" y="25" font-family="Georgia, serif" font-size="9" fill="#FAFAF8" letter-spacing="4" font-weight="400">ONNAT</text>
+          <text x="52" y="38" font-family="Georgia, serif" font-size="9" fill="#FAFAF8" letter-spacing="4" font-weight="400">IVING</text>
+          <line x1="46" y1="16" x2="46" y2="46" stroke="#C8674B" stroke-width="0.8" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+    <p class="comparison-note">White wordmark on ink background — all three work on dark</p>
+  </div>
+
+  <div class="files-list">
+    <h3>📁 File Reference</h3>
+    <code>design/<span>monnat-logo-v1-leaf.svg</span>     — Botanical mark + wordmark</code>
+    <code>design/<span>monnat-logo-v2-monogram.svg</span>  — Geometric "M" monogram + wordmark</code>
+    <code>design/<span>monnat-logo-v3-stack.svg</span>     — Editorial M-stack typography</code>
+    <code>design/<span>monnat-logo-comparison.html</span>  — This comparison page</code>
+  </div>
+
+  <footer>
+    Monnat Living · Logo concepts for owner review · June 2026
+  </footer>
+</div>
+</body>
+</html>
