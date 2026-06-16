@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           <div className="flex-1 md:flex-none text-center md:text-left flex items-center">
             <Link to="/" className="inline-block">
               <img
-                src="/monnat-logo-v1-leaf.svg"
+                src="/monnat-living-logo.svg"
                 alt="Monnat Living Logo"
                 className="h-14 sm:h-16 w-auto hover:opacity-90 transition-opacity"
               />

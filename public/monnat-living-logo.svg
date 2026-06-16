@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
+<!-- ==========================================================
+     MONNAT LIVING — Logo Concept V1: "The Leaf"
+     A subtle botanical mark + refined serif wordmark
+     Direction: Warm, natural, grounded
+     ========================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
   <defs>
     <style>
-      .logo-text { font-family: 'Georgia', 'Times New Roman', serif; font-weight: 400; }
-      .logo-sub { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight: 300; }
+      .v1-wordmark { font-family: 'Playfair Display', 'Times New Roman', Georgia, serif; }
+      .v1-tagline { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
     </style>
   </defs>
-  
-  <!-- Subtle line separator -->
-  <line x1="0" y1="72" x2="800" y2="72" stroke="#C8674B" stroke-width="1" opacity="0.3"/>
-  
-  <!-- Main wordmark -->
-  <text x="400" y="55" text-anchor="middle" class="logo-text" font-size="52" fill="#2C2C2C" letter-spacing="14">MONNAT</text>
-  <text x="400" y="95" text-anchor="middle" class="logo-text" font-size="52" fill="#2C2C2C" letter-spacing="14">LIVING</text>
-  
-  <!-- Thin terracotta accent line -->
-  <line x1="260" y1="112" x2="540" y2="112" stroke="#C8674B" stroke-width="1.5"/>
-  
+
+  <!-- Leaf/Sprig Icon — minimalist olive branch inspired mark -->
+  <g transform="translate(80, 75)">
+    <!-- Main stem -->
+    <path d="M10,50 C10,30 15,15 20,0" stroke="#C8674B" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Left leaf -->
+    <path d="M10,42 C0,38 -4,28 2,22 C8,16 14,20 14,28 C14,34 12,40 10,42Z" fill="#8A9A8A" opacity="0.85"/>
+    <!-- Right leaf -->
+    <path d="M14,30 C22,26 28,20 26,14 C24,8 18,10 16,18 C15,22 14,26 14,30Z" fill="#6B7D5A" opacity="0.7"/>
+    <!-- Small top leaf -->
+    <path d="M16,16 C18,10 22,6 20,2 C18,-2 14,2 14,8 C14,12 15,14 16,16Z" fill="#8A9A8A" opacity="0.6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="145" y="72" class="v1-wordmark" font-size="40" fill="#2C2C2C" letter-spacing="5" font-weight="400">MONNAT</text>
+  <text x="145" y="110" class="v1-wordmark" font-size="40" fill="#2C2C2C" letter-spacing="5" font-weight="400">LIVING</text>
+
+  <!-- Thin divider line -->
+  <line x1="145" y1="128" x2="370" y2="128" stroke="#C8674B" stroke-width="1.2" opacity="0.4"/>
+
   <!-- Tagline -->
-  <text x="400" y="140" text-anchor="middle" class="logo-sub" font-size="12" fill="#8A9A8A" letter-spacing="6">LUXE WITHIN REACH</text>
+  <text x="258" y="150" text-anchor="middle" class="v1-tagline" font-size="11" fill="#8A9A8A" letter-spacing="4" font-weight="300">MADE FOR LIVING</text>
 </svg>

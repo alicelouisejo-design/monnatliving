@@ -3,14 +3,36 @@ import { ArrowDown, Percent, Heart, Award } from 'lucide-react'
 import { products } from '../data/products'
 import { ProductCard } from '../components/ProductCard'
 
+const ROOM_SECTIONS = [
+  {
+    name: "Bedroom",
+    description: "Heirloom linen throws, organic pillow covers, and cozy organic textures designed for rest.",
+    placeholder: "Additional organic cotton sheets and washed-linen duvets coming soon."
+  },
+  {
+    name: "Bathroom",
+    description: "Ultra-absorbent waffle bath towels, Turkish cotton basics, and bath organizers.",
+    placeholder: "Solid teak bathtub caddies and linen bath mats currently in development."
+  },
+  {
+    name: "Kitchen & Dining",
+    description: "Artisanal ceramic pitchers, hand-blown glassware, and solid wood chopping boards.",
+    placeholder: "Stoneware mule mugs, hand-carved boards, and glassware additions coming soon."
+  },
+  {
+    name: "Living Room / Decor",
+    description: "Grounded mushroom lamps, raw travertine incense holders, natural soy candles, and bouclé baskets.",
+    placeholder: "Sustainably harvested hand-woven baskets and sculptural objects coming in our next drop."
+  },
+  {
+    name: "Entryway",
+    description: "Magnetic key holders and minimal oak organizers to bring calm to coming and going.",
+    placeholder: "Solid wood coat racks, custom door mats, and entryway organizers in development."
+  }
+]
+
 export const Home: React.FC = () => {
   const scrollRef = React.useRef<HTMLDivElement>(null)
-  const rooms = ["All Rooms", "Living Room", "Kitchen & Dining", "Bedroom", "Bathroom"]
-  const [selectedRoom, setSelectedRoom] = React.useState("All Rooms")
-
-  const filteredProducts = selectedRoom === "All Rooms"
-    ? products
-    : products.filter((p) => p.category === selectedRoom)
 
   const scrollToProducts = () => {
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -107,41 +129,51 @@ export const Home: React.FC = () => {
 
       {/* Catalog Grid Section */}
       <section ref={scrollRef} id="collection" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-brand-grey/20 pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-brand-grey/20 pb-6">
           <div className="space-y-2">
             <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold">The Core Edition</span>
-            <h2 className="font-serif text-3xl text-brand-slate font-medium">Curated Essentials</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl text-brand-slate font-medium">Curated Essentials</h2>
           </div>
           <p className="text-xs sm:text-sm text-brand-slate/60 max-w-sm mt-4 md:mt-0 leading-relaxed">
-            A small, carefully sourced batch of highly tactile home accessories. Woven, thrown, and carved by historic partner ateliers.
+            A small, carefully sourced batch of highly tactile home accessories. Woven, thrown, and carved by historic partner ateliers, organized by room.
           </p>
         </div>
 
-        {/* Room Filter Tabs */}
-        <div className="flex flex-wrap gap-2 md:gap-4 mb-8 border-b border-brand-grey/10 pb-4">
-          {rooms.map((room) => {
-            const isActive = selectedRoom === room
+        {/* Grouped by Room Sections */}
+        <div className="space-y-16">
+          {ROOM_SECTIONS.map((room) => {
+            const roomProducts = products.filter((p) => p.room === room.name)
+            
             return (
-              <button
-                key={room}
-                onClick={() => setSelectedRoom(room)}
-                className={`px-4 py-2 text-xs font-semibold tracking-widest uppercase transition-all duration-300 border-b-2 focus:outline-none ${
-                  isActive
-                    ? "border-brand-terracotta text-brand-terracotta font-bold"
-                    : "border-transparent text-brand-slate/60 hover:text-brand-slate hover:border-brand-grey/30"
-                }`}
-              >
-                {room}
-              </button>
+              <div key={room.name} className="scroll-mt-24 border-b border-brand-grey/10 pb-12 last:border-b-0 last:pb-0">
+                <div className="mb-8">
+                  <h3 className="font-serif text-2xl text-brand-slate font-medium tracking-tight">
+                    {room.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-brand-slate/60 mt-1 max-w-2xl">
+                    {room.description}
+                  </p>
+                </div>
+
+                {roomProducts.length > 0 ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {roomProducts.map((product) => (
+                      <ProductCard key={product.id} product={product} />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="border border-dashed border-brand-grey/30 bg-brand-cream/10 px-6 py-10 text-center rounded-none max-w-md">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-brand-slate/50">
+                      {room.name} Essentials Coming Soon
+                    </p>
+                    <p className="text-[11px] text-brand-slate/40 mt-1 italic">
+                      {room.placeholder}
+                    </p>
+                  </div>
+                )}
+              </div>
             )
           })}
-        </div>
-
-        {/* Product Cards Container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
         </div>
       </section>
 
