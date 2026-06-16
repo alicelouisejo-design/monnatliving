@@ -15,19 +15,14 @@ const ROOM_SECTIONS = [
     placeholder: "Solid teak bathtub caddies and linen bath mats currently in development."
   },
   {
-    name: "Kitchen & Dining",
-    description: "Artisanal ceramic pitchers, hand-blown glassware, and solid wood chopping boards.",
-    placeholder: "Stoneware mule mugs, hand-carved boards, and glassware additions coming soon."
+    name: "Living Space",
+    description: "Artisanal ceramic pitchers, grounded mushroom lamps, raw travertine incense holders, and natural soy candles.",
+    placeholder: "Sculptural objects, stoneware table settings, and everyday glassware coming soon."
   },
   {
-    name: "Living Room / Decor",
-    description: "Grounded mushroom lamps, raw travertine incense holders, natural soy candles, and bouclé baskets.",
-    placeholder: "Sustainably harvested hand-woven baskets and sculptural objects coming in our next drop."
-  },
-  {
-    name: "Entryway",
-    description: "Magnetic key holders and minimal oak organizers to bring calm to coming and going.",
-    placeholder: "Solid wood coat racks, custom door mats, and entryway organizers in development."
+    name: "Smart Living",
+    description: "Magnetic key holders and minimal oak organizers that bring warm functionality to your daily flow.",
+    placeholder: "Solid wood smart accessories, custom key hangers, and tech-friendly organizers in development."
   }
 ]
 

@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
               <img
                 src="/monnat-living-logo.svg"
                 alt="Monnat Living Logo"
-                className="h-14 sm:h-16 w-auto hover:opacity-90 transition-opacity"
+                className="h-16 sm:h-20 w-auto hover:opacity-90 transition-opacity"
               />
             </Link>
           </div>

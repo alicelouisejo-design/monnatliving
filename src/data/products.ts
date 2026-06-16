@@ -40,7 +40,7 @@ export const products: Product[] = [
     price: 75,
     image: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=800&q=80",
     category: "Kitchen & Dining",
-    room: "Kitchen & Dining",
+    room: "Living Space",
     description: "Designed for everyday rituals and slow mornings. This double-fired stoneware pitcher features a warm sandstone exterior left unglazed for a raw, tactile touch, contrasted by a milky-white glazed interior. Holds warm or cold liquids perfectly and doubles as an artful flower vase.",
     details: [
       "Double-fired locally sourced stoneware",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     price: 60,
     image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
     category: "Living Room",
-    room: "Living Room / Decor",
+    room: "Living Space",
     description: "A trio of hand-poured soy wax candles with crackling wood wicks, nestled inside beautiful hand-textured stoneware jars that you'll want to reuse for plants or desk storage. Includes three grounding, nature-inspired scents: Amber & Cedar, Smoked Hinoki, and Coastal Sage.",
     details: [
       "100% Natural Soy Wax (phthalate-free, non-toxic)",
@@ -97,7 +97,7 @@ export const products: Product[] = [
     price: 35,
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
     category: "Living Room",
-    room: "Living Room / Decor",
+    room: "Living Space",
     description: "Carved from a single piece of premium Italian travertine stone, this minimalist incense holder celebrates raw geology. The surface is honed but left with its natural organic pits, creating a gorgeous contrasting texture. The wide flat surface collects ash elegantly.",
     details: [
       "100% Italian Travertine Stone",
