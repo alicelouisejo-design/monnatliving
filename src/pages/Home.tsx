@@ -5,6 +5,12 @@ import { ProductCard } from '../components/ProductCard'
 
 export const Home: React.FC = () => {
   const scrollRef = React.useRef<HTMLDivElement>(null)
+  const rooms = ["All Rooms", "Living Room", "Kitchen & Dining", "Bedroom", "Bathroom"]
+  const [selectedRoom, setSelectedRoom] = React.useState("All Rooms")
+
+  const filteredProducts = selectedRoom === "All Rooms"
+    ? products
+    : products.filter((p) => p.category === selectedRoom)
 
   const scrollToProducts = () => {
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -111,9 +117,29 @@ export const Home: React.FC = () => {
           </p>
         </div>
 
+        {/* Room Filter Tabs */}
+        <div className="flex flex-wrap gap-2 md:gap-4 mb-8 border-b border-brand-grey/10 pb-4">
+          {rooms.map((room) => {
+            const isActive = selectedRoom === room
+            return (
+              <button
+                key={room}
+                onClick={() => setSelectedRoom(room)}
+                className={`px-4 py-2 text-xs font-semibold tracking-widest uppercase transition-all duration-300 border-b-2 focus:outline-none ${
+                  isActive
+                    ? "border-brand-terracotta text-brand-terracotta font-bold"
+                    : "border-transparent text-brand-slate/60 hover:text-brand-slate hover:border-brand-grey/30"
+                }`}
+              >
+                {room}
+              </button>
+            )
+          })}
+        </div>
+
         {/* Product Cards Container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

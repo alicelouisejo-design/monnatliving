@@ -19,7 +19,7 @@ export const products: Product[] = [
     subtitle: "French flax linen, woven in a Portuguese family mill",
     price: 120,
     image: "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?auto=format&fit=crop&w=800&q=80",
-    category: "Bedding & Throws",
+    category: "Bedroom",
     description: "Woven from 100% organic French flax and garment-washed for a uniquely soft texture, this waffle blanket offers the perfect balance of weight, breathability, and warmth. Its high-texture waffle knit adds depth to any room, draped over a bed or cozying up a sofa.",
     details: [
       "100% Organic French Flax Linen",
@@ -55,7 +55,7 @@ export const products: Product[] = [
     subtitle: "Garment-washed flax in soft terracotta",
     price: 48,
     image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
-    category: "Decor & Accent",
+    category: "Living Room",
     description: "Woven from fine Belgian linen, this pillow cover is stonewashed for supreme suppleness and an effortlessly relaxed look. Features a hidden zipper closure and a heavyweight texture that wears beautifully over time. A subtle, natural splash of terracotta tone to warm up any space.",
     details: [
       "100% Belgian Flax Linen",
@@ -73,7 +73,7 @@ export const products: Product[] = [
     subtitle: "Scented soy wax in hand-textured stoneware vessels",
     price: 60,
     image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
-    category: "Decor & Scent",
+    category: "Living Room",
     description: "A trio of hand-poured soy wax candles with crackling wood wicks, nestled inside beautiful hand-textured stoneware jars that you'll want to reuse for plants or desk storage. Includes three grounding, nature-inspired scents: Amber & Cedar, Smoked Hinoki, and Coastal Sage.",
     details: [
       "100% Natural Soy Wax (phthalate-free, non-toxic)",
@@ -91,7 +91,7 @@ export const products: Product[] = [
     subtitle: "Honed raw travertine marble with unique character",
     price: 35,
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-    category: "Decor & Scent",
+    category: "Living Room",
     description: "Carved from a single piece of premium Italian travertine stone, this minimalist incense holder celebrates raw geology. The surface is honed but left with its natural organic pits, creating a gorgeous contrasting texture. The wide flat surface collects ash elegantly.",
     details: [
       "100% Italian Travertine Stone",
@@ -109,7 +109,7 @@ export const products: Product[] = [
     subtitle: "Set of two ultra-absorbent organic Turkish cotton towels",
     price: 85,
     image: "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=800&q=80",
-    category: "Bath",
+    category: "Bathroom",
     description: "Ditch the heavy, damp towels. Woven in a Turkish atelier, these towels feature a deep waffle weave that expands to absorb moisture instantly and shrinks back down to dry twice as fast as plush terry cloth. Made from long-staple organic cotton that gets softer with every single wash.",
     details: [
       "Set includes 2 Bath Towels",

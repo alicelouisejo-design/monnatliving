@@ -24,11 +24,13 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Logo / Wordmark */}
-          <div className="flex-1 md:flex-none text-center md:text-left">
+          <div className="flex-1 md:flex-none text-center md:text-left flex items-center">
             <Link to="/" className="inline-block">
-              <span className="font-serif text-2xl tracking-widest text-brand-slate hover:text-brand-terracotta transition-colors font-semibold uppercase">
-                monnat living
-              </span>
+              <img
+                src="/monnat-logo-v1-leaf.svg"
+                alt="Monnat Living Logo"
+                className="h-14 sm:h-16 w-auto hover:opacity-90 transition-opacity"
+              />
             </Link>
           </div>
 
