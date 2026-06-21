@@ -17,7 +17,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       id: product.id,
       title: product.title,
       price: product.price,
-      image: product.image,
+      image: product.images[0],
     })
   }
 
@@ -26,7 +26,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Product Image Link */}
       <Link to={`/product/${product.id}`} className="relative block overflow-hidden aspect-4/3 bg-brand-cream">
         <img
-          src={product.image}
+          src={product.images[0]}
           alt={product.title}
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
           loading="lazy"

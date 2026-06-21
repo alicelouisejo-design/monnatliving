@@ -13,14 +13,14 @@ export const ProductDetail: React.FC = () => {
 
   // Find current product
   const product = products.find((p) => p.id === id)
-  const [activeImage, setActiveImage] = useState(product?.image || '')
+  const [activeImage, setActiveImage] = useState(product?.images[0] || '')
 
   // Scroll to top on mount / product change
   useEffect(() => {
     window.scrollTo(0, 0)
     setQuantity(1)
     if (product) {
-      setActiveImage(product.image)
+      setActiveImage(product.images[0])
     }
   }, [id, product])
 
@@ -53,7 +53,7 @@ export const ProductDetail: React.FC = () => {
         id: product.id,
         title: product.title,
         price: product.price,
-        image: product.image,
+        image: product.images[0],
       })
     }
   }
@@ -88,14 +88,14 @@ export const ProductDetail: React.FC = () => {
             <div className="bg-white border border-brand-grey/15 overflow-hidden">
               <div className="aspect-4/3 overflow-hidden bg-brand-cream">
                 <img
-                  src={activeImage || product.image}
+                  src={activeImage || product.images[0]}
                   alt={product.title}
                   className="w-full h-full object-cover object-center transition-all duration-300"
                 />
               </div>
             </div>
             {/* Thumbnail Gallery */}
-            {product.images && product.images.length > 0 && (
+            {product.images && product.images.length > 1 && (
               <div className="grid grid-cols-4 gap-4">
                 {product.images.map((img, idx) => (
                   <button
