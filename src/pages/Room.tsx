@@ -41,7 +41,7 @@ export const Room: React.FC<RoomProps> = ({ roomSlug: propRoomSlug }) => {
   const { roomSlug: paramRoomSlug } = useParams<{ roomSlug: string }>()
   const navigate = useNavigate()
 
-  const rawSlug = propRoomSlug || paramRoomSlug || window.location.pathname.replace(/^\//, '')
+  const rawSlug = propRoomSlug || paramRoomSlug || ''
   const slug = rawSlug.toLowerCase()
 
   // Scroll to top on mount
