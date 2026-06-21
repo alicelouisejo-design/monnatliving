@@ -103,9 +103,9 @@ export const Home: React.FC = () => {
             <div className="p-3 bg-brand-cream rounded-full text-brand-terracotta">
               <Percent size={24} />
             </div>
-            <h3 className="font-serif text-lg font-medium text-brand-slate">Honest Margin</h3>
+            <h3 className="font-serif text-lg font-medium text-brand-slate">Honest Pricing</h3>
             <p className="text-xs text-brand-slate/70 leading-relaxed max-w-xs">
-              Traditional brands mark up products 5–10x. We cap our margins at 2–3x to keep premium living accessible.
+              Traditional retail marks up products 5–10x just for a logo. We cut out the luxury markup to offer the exact same boutique quality at an honest price.
             </p>
           </div>
 
