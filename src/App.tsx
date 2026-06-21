@@ -22,6 +22,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/room/:roomSlug" element={<Room />} />
+              <Route path="/bedroom" element={<Room roomSlug="bedroom" />} />
+              <Route path="/bathroom" element={<Room roomSlug="bathroom" />} />
+              <Route path="/living-space" element={<Room roomSlug="living-space" />} />
+              <Route path="/smart-living" element={<Room roomSlug="smart-living" />} />
             </Routes>
           </main>
           

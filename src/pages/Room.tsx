@@ -33,16 +33,22 @@ const ROOMS_DATA: Record<string, RoomInfo> = {
   }
 }
 
-export const Room: React.FC = () => {
-  const { roomSlug } = useParams<{ roomSlug: string }>()
+interface RoomProps {
+  roomSlug?: string
+}
+
+export const Room: React.FC<RoomProps> = ({ roomSlug: propRoomSlug }) => {
+  const { roomSlug: paramRoomSlug } = useParams<{ roomSlug: string }>()
   const navigate = useNavigate()
+
+  const rawSlug = propRoomSlug || paramRoomSlug || window.location.pathname.replace(/^\//, '')
+  const slug = rawSlug.toLowerCase()
 
   // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [roomSlug])
+  }, [slug])
 
-  const slug = roomSlug?.toLowerCase() || ''
   const roomInfo = ROOMS_DATA[slug]
 
   if (!roomInfo) {

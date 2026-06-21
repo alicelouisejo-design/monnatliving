@@ -1,36 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowDown, Globe, Heart, Award } from 'lucide-react'
-import { products } from '../data/products'
-import { ProductCard } from '../components/ProductCard'
 
 const ROOM_SECTIONS = [
   {
     name: "Bedroom",
-    description: "Heirloom linen throws, organic pillow covers, and cozy organic textures designed for rest.",
-    placeholder: "Additional organic cotton sheets and washed-linen duvets coming soon."
+    path: "/bedroom",
+    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+    description: "Heirloom linen throws, organic pillow covers, and cozy organic textures designed for rest."
   },
   {
     name: "Bathroom",
-    description: "Ultra-absorbent waffle bath towels, Turkish cotton basics, and bath organizers.",
-    placeholder: "Solid teak bathtub caddies and linen bath mats currently in development."
+    path: "/bathroom",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    description: "Ultra-absorbent waffle bath towels, Turkish cotton basics, and bath organizers."
   },
   {
     name: "Living Space",
-    description: "Artisanal ceramic pitchers, grounded mushroom lamps, raw travertine incense holders, and natural soy candles.",
-    placeholder: "Sculptural objects, stoneware table settings, and everyday glassware coming soon."
+    path: "/living-space",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+    description: "Artisanal ceramic pitchers, grounded mushroom lamps, raw travertine incense holders, and natural soy candles."
   },
   {
     name: "Smart Living",
-    description: "Magnetic key holders and minimal oak organizers that bring warm functionality to your daily flow.",
-    placeholder: "Solid wood smart accessories, custom key hangers, and tech-friendly organizers in development."
+    path: "/smart-living",
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+    description: "Magnetic key holders and minimal oak organizers that bring warm functionality to your daily flow."
   }
 ]
 
 export const Home: React.FC = () => {
   const scrollRef = React.useRef<HTMLDivElement>(null)
 
-  const scrollToProducts = () => {
+  const scrollToDirectory = () => {
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -60,10 +62,10 @@ export const Home: React.FC = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <button
-              onClick={scrollToProducts}
+              onClick={scrollToDirectory}
               className="w-full sm:w-auto px-8 py-4 bg-brand-slate text-white text-xs font-semibold uppercase tracking-widest hover:bg-brand-terracotta transition-all duration-300 rounded-none shadow-sm"
             >
-              Explore Collection
+              Explore Spaces
             </button>
             <a
               href="#philosophy"
@@ -76,7 +78,7 @@ export const Home: React.FC = () => {
           {/* Down Indicator */}
           <div className="pt-8 flex justify-center">
             <button
-              onClick={scrollToProducts}
+              onClick={scrollToDirectory}
               className="text-brand-slate/40 hover:text-brand-terracotta transition-colors animate-bounce p-2"
               aria-label="Scroll down"
             >
@@ -123,62 +125,54 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Catalog Grid Section */}
+      {/* Space Directory Section (Replaces Full Catalog) */}
       <section ref={scrollRef} id="collection" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-brand-grey/20 pb-6">
           <div className="space-y-2">
             <span className="text-xs uppercase tracking-widest text-brand-terracotta font-semibold">The Core Edition</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-brand-slate font-medium">Curated Essentials</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl text-brand-slate font-medium">Curated Collections</h2>
           </div>
-          <p className="text-xs sm:text-sm text-brand-slate/60 max-w-sm mt-4 md:mt-0 leading-relaxed">
-            A small, carefully sourced batch of highly tactile home accessories. Woven, thrown, and carved by historic partner ateliers, organized by room.
+          <p className="text-xs sm:text-sm text-brand-slate/60 max-w-md mt-4 md:mt-0 leading-relaxed">
+            Every piece in our room collection is an intentional tactile study in premium materials, crafted in small batches by European partner ateliers.
           </p>
         </div>
 
-        {/* Grouped by Room Sections */}
-        <div className="space-y-16">
-          {ROOM_SECTIONS.map((room) => {
-            const roomProducts = products.filter((p) => p.room === room.name)
-            const slug = room.name.toLowerCase().replace(' ', '-')
-            
-            return (
-              <div key={room.name} className="scroll-mt-24 border-b border-brand-grey/10 pb-12 last:border-b-0 last:pb-0">
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
-                  <div>
-                    <h3 className="font-serif text-2xl text-brand-slate font-medium tracking-tight">
-                      {room.name}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-brand-slate/60 mt-1 max-w-2xl">
-                      {room.description}
-                    </p>
-                  </div>
-                  <Link
-                    to={`/room/${slug}`}
-                    className="text-xs font-semibold uppercase tracking-widest text-brand-terracotta hover:text-brand-slate transition-all duration-300 whitespace-nowrap shrink-0 border-b border-brand-terracotta/35 pb-0.5 hover:border-brand-slate"
-                  >
-                    Explore {room.name} &rarr;
-                  </Link>
-                </div>
-
-                {roomProducts.length > 0 ? (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {roomProducts.map((product) => (
-                      <ProductCard key={product.id} product={product} />
-                    ))}
-                  </div>
-                ) : (
-                  <div className="border border-dashed border-brand-grey/30 bg-brand-cream/10 px-6 py-10 text-center rounded-none max-w-md">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-brand-slate/50">
-                      {room.name} Essentials Coming Soon
-                    </p>
-                    <p className="text-[11px] text-brand-slate/40 mt-1 italic">
-                      {room.placeholder}
-                    </p>
-                  </div>
-                )}
+        {/* Directory Grid of Category Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          {ROOM_SECTIONS.map((room) => (
+            <Link 
+              key={room.name} 
+              to={room.path}
+              className="group flex flex-col bg-white border border-brand-grey/15 overflow-hidden transition-all duration-500 hover:shadow-md hover:border-brand-grey/30"
+            >
+              {/* Card Image Area */}
+              <div className="aspect-[16/10] overflow-hidden bg-brand-grey/5 relative">
+                <img
+                  src={room.image}
+                  alt={room.name}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-slate/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-            )
-          })}
+
+              {/* Card Text Content */}
+              <div className="p-8 flex flex-col flex-grow justify-between space-y-4">
+                <div className="space-y-2">
+                  <h3 className="font-serif text-2xl text-brand-slate font-medium transition-colors group-hover:text-brand-terracotta duration-300">
+                    The {room.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-brand-slate/70 leading-relaxed">
+                    {room.description}
+                  </p>
+                </div>
+                
+                <span className="inline-flex items-center text-xs font-semibold uppercase tracking-widest text-brand-terracotta group-hover:text-brand-slate transition-all duration-300">
+                  Explore Collection <span className="transform translate-x-0 group-hover:translate-x-1.5 transition-transform duration-300 ml-1.5">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -266,7 +260,7 @@ export const Home: React.FC = () => {
           </p>
           
           <div className="border-l-2 border-brand-terracotta pl-4 py-1 italic text-brand-slate/75 text-sm">
-            \"Warm minimalism is the art of feeling cozy in an uncluttered space, where everything has an absolute reason to exist.\"
+            "Warm minimalism is the art of feeling cozy in an uncluttered space, where everything has an absolute reason to exist."
           </div>
         </div>
       </section>

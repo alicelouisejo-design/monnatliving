@@ -43,25 +43,25 @@ export const Header: React.FC = () => {
               Collection
             </Link>
             <Link
-              to="/room/bedroom"
+              to="/bedroom"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
               Bedroom
             </Link>
             <Link
-              to="/room/bathroom"
+              to="/bathroom"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
               Bathroom
             </Link>
             <Link
-              to="/room/living-space"
+              to="/living-space"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
               Living Space
             </Link>
             <Link
-              to="/room/smart-living"
+              to="/smart-living"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
               Smart Living
@@ -111,28 +111,28 @@ export const Header: React.FC = () => {
           </Link>
           <div className="pl-4 space-y-3 border-l border-brand-grey/25">
             <Link
-              to="/room/bedroom"
+              to="/bedroom"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
             >
               Bedroom
             </Link>
             <Link
-              to="/room/bathroom"
+              to="/bathroom"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
             >
               Bathroom
             </Link>
             <Link
-              to="/room/living-space"
+              to="/living-space"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
             >
               Living Space
             </Link>
             <Link
-              to="/room/smart-living"
+              to="/smart-living"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
             >
