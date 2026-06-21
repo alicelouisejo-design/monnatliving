@@ -13,12 +13,16 @@ export const ProductDetail: React.FC = () => {
 
   // Find current product
   const product = products.find((p) => p.id === id)
+  const [activeImage, setActiveImage] = useState(product?.image || '')
 
   // Scroll to top on mount / product change
   useEffect(() => {
     window.scrollTo(0, 0)
     setQuantity(1)
-  }, [id])
+    if (product) {
+      setActiveImage(product.image)
+    }
+  }, [id, product])
 
   if (!product) {
     return (
@@ -80,14 +84,39 @@ export const ProductDetail: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Image Container */}
-          <div className="lg:col-span-7 bg-white border border-brand-grey/15 overflow-hidden">
-            <div className="aspect-4/3 overflow-hidden bg-brand-cream">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="w-full h-full object-cover object-center"
-              />
+          <div className="lg:col-span-7 space-y-4">
+            <div className="bg-white border border-brand-grey/15 overflow-hidden">
+              <div className="aspect-4/3 overflow-hidden bg-brand-cream">
+                <img
+                  src={activeImage || product.image}
+                  alt={product.title}
+                  className="w-full h-full object-cover object-center transition-all duration-300"
+                />
+              </div>
             </div>
+            {/* Thumbnail Gallery */}
+            {product.images && product.images.length > 0 && (
+              <div className="grid grid-cols-4 gap-4">
+                {product.images.map((img, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setActiveImage(img)}
+                    className={`aspect-4/3 overflow-hidden bg-white border cursor-pointer transition-all ${
+                      activeImage === img
+                        ? 'border-brand-terracotta ring-1 ring-brand-terracotta'
+                        : 'border-brand-grey/15 hover:border-brand-grey/40'
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`${product.title} view ${idx + 1}`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Details Column */}
