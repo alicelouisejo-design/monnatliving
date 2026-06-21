@@ -20,7 +20,7 @@ export const products: Product[] = [
     subtitle: "Cordless rechargeable ribbed glass light",
     price: 34.50,
     images: [
-      "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1606170033073-9091550948f5?auto=format&fit=crop&w=800&q=80"
     ],
     category: "Lighting",
     room: "Bedroom",
@@ -41,7 +41,8 @@ export const products: Product[] = [
     subtitle: "100% pure stone-washed flax throw",
     price: 95.00,
     images: [
-      "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?auto=format&fit=crop&w=800&q=80"
+      "/social-linen-throw-hero.png",
+      "/texture-linen-stone.jpg"
     ],
     category: "Textiles",
     room: "Bedroom",
@@ -62,7 +63,7 @@ export const products: Product[] = [
     subtitle: "Stone-washed pure linen covers",
     price: 38.00,
     images: [
-      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80"
+      "/texture-linen-stone.jpg"
     ],
     category: "Textiles",
     room: "Bedroom",
@@ -251,7 +252,7 @@ export const products: Product[] = [
     subtitle: "Quick-dry honeycomb weave towels",
     price: 68.00,
     images: [
-      "https://images.unsplash.com/photo-1616627547474-f97e6449ec98?auto=format&fit=crop&w=800&q=80"
+      "/social-waffle-towels.png"
     ],
     category: "Textiles",
     room: "Bathroom",
@@ -293,7 +294,7 @@ export const products: Product[] = [
     subtitle: "Set of three amber glass jars with airtight lids",
     price: 28.00,
     images: [
-    	"https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
     ],
     category: "Accessories",
     room: "Bathroom",
