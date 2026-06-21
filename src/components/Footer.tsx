@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-2 text-xs text-brand-grey/60">
               <ShieldCheck size={16} className="text-brand-terracotta" />
-              <span>Genuinely premium. Fair margins. Real value.</span>
+              <span>Genuinely premium. Honest pricing. Real value.</span>
             </div>
           </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import { ArrowDown, Percent, Heart, Award } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowDown, Globe, Heart, Award } from 'lucide-react'
 import { products } from '../data/products'
 import { ProductCard } from '../components/ProductCard'
 
@@ -53,7 +54,7 @@ export const Home: React.FC = () => {
           
           {/* Supportive Copy */}
           <p className="text-base sm:text-lg text-brand-slate/85 max-w-2xl mx-auto leading-relaxed">
-            Why pay 5x more for a luxury logo when you can have the exact same heirloom quality direct from the ateliers? We curate beautiful, durable pieces designed to elevate daily rituals — keeping margins fair and quality absolute.
+            Every piece in our collection is chosen for the way it lives — the weight of the linen, the warmth of the stone, the way morning light catches the glaze. Because a beautiful home is built slowly, piece by considered piece.
           </p>
           
           {/* CTAs */}
@@ -101,11 +102,11 @@ export const Home: React.FC = () => {
 
           <div className="space-y-3 p-4 flex flex-col items-center">
             <div className="p-3 bg-brand-cream rounded-full text-brand-terracotta">
-              <Percent size={24} />
+              <Globe size={24} />
             </div>
-            <h3 className="font-serif text-lg font-medium text-brand-slate">Honest Pricing</h3>
+            <h3 className="font-serif text-lg font-medium text-brand-slate">Direct from the Atelier</h3>
             <p className="text-xs text-brand-slate/70 leading-relaxed max-w-xs">
-              Traditional retail marks up products 5–10x just for a logo. We cut out the luxury markup to offer the exact same boutique quality at an honest price.
+              We work directly with family-run mills and artisan studios across Europe — sourcing the same quality as heritage brands, without the layers in between.
             </p>
           </div>
 
@@ -138,16 +139,25 @@ export const Home: React.FC = () => {
         <div className="space-y-16">
           {ROOM_SECTIONS.map((room) => {
             const roomProducts = products.filter((p) => p.room === room.name)
+            const slug = room.name.toLowerCase().replace(' ', '-')
             
             return (
               <div key={room.name} className="scroll-mt-24 border-b border-brand-grey/10 pb-12 last:border-b-0 last:pb-0">
-                <div className="mb-8">
-                  <h3 className="font-serif text-2xl text-brand-slate font-medium tracking-tight">
-                    {room.name}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-brand-slate/60 mt-1 max-w-2xl">
-                    {room.description}
-                  </p>
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                  <div>
+                    <h3 className="font-serif text-2xl text-brand-slate font-medium tracking-tight">
+                      {room.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-brand-slate/60 mt-1 max-w-2xl">
+                      {room.description}
+                    </p>
+                  </div>
+                  <Link
+                    to={`/room/${slug}`}
+                    className="text-xs font-semibold uppercase tracking-widest text-brand-terracotta hover:text-brand-slate transition-all duration-300 whitespace-nowrap shrink-0 border-b border-brand-terracotta/35 pb-0.5 hover:border-brand-slate"
+                  >
+                    Explore {room.name} &rarr;
+                  </Link>
                 </div>
 
                 {roomProducts.length > 0 ? (

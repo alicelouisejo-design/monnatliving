@@ -35,30 +35,42 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 lg:space-x-12">
+          <nav className="hidden md:flex space-x-4 lg:space-x-6">
             <Link
               to="/"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
               Collection
             </Link>
-            <a
-              href="#philosophy"
+            <Link
+              to="/room/bedroom"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
-              Our Philosophy
-            </a>
-            <a
-              href="#about"
+              Bedroom
+            </Link>
+            <Link
+              to="/room/bathroom"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
-              The Story
-            </a>
-            <a
-              href="#footer"
+              Bathroom
+            </Link>
+            <Link
+              to="/room/living-space"
               className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
             >
-              Contact
+              Living Space
+            </Link>
+            <Link
+              to="/room/smart-living"
+              className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
+            >
+              Smart Living
+            </Link>
+            <a
+              href="/#philosophy"
+              className="text-sm font-medium tracking-wide text-brand-slate/90 hover:text-brand-terracotta transition-colors"
+            >
+              Philosophy
             </a>
           </nav>
 
@@ -97,15 +109,45 @@ export const Header: React.FC = () => {
           >
             Collection
           </Link>
+          <div className="pl-4 space-y-3 border-l border-brand-grey/25">
+            <Link
+              to="/room/bedroom"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
+            >
+              Bedroom
+            </Link>
+            <Link
+              to="/room/bathroom"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
+            >
+              Bathroom
+            </Link>
+            <Link
+              to="/room/living-space"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
+            >
+              Living Space
+            </Link>
+            <Link
+              to="/room/smart-living"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-sm font-medium tracking-wide text-brand-slate/85 hover:text-brand-terracotta transition-colors"
+            >
+              Smart Living
+            </Link>
+          </div>
           <a
-            href="#philosophy"
+            href="/#philosophy"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-base font-medium tracking-wide text-brand-slate hover:text-brand-terracotta transition-colors"
           >
             Our Philosophy
           </a>
           <a
-            href="#about"
+            href="/#about"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-base font-medium tracking-wide text-brand-slate hover:text-brand-terracotta transition-colors"
           >
