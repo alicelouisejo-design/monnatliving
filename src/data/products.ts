@@ -20,7 +20,7 @@ export const products: Product[] = [
     subtitle: "Cordless rechargeable ribbed glass light",
     price: 34.50,
     images: [
-      "https://placehold.co/600x600/F5F0EB/C8674B?text=Mushroom+Lamp"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Ribbed Mushroom Lamp",
     ],
     category: "Lighting",
     room: "Bedroom",
@@ -41,7 +41,7 @@ export const products: Product[] = [
     subtitle: "100% pure stone-washed flax throw",
     price: 95.00,
     images: [
-      "/social-linen-throw-hero.png",
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Linen Throw (Stone)",
       "/texture-linen-stone.jpg"
     ],
     category: "Textiles",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     subtitle: "Stone-washed pure linen covers",
     price: 38.00,
     images: [
-      "/texture-linen-stone.jpg"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Linen Pillow Cover Set",
     ],
     category: "Textiles",
     room: "Bedroom",
@@ -84,7 +84,7 @@ export const products: Product[] = [
     subtitle: "Minimalist oak-finish jewelry storage",
     price: 32.00,
     images: [
-      "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Wooden Jewelry Box",
     ],
     category: "Accessories",
     room: "Bedroom",
@@ -105,7 +105,7 @@ export const products: Product[] = [
     subtitle: "Hand-woven seagrass basket with lid",
     price: 42.00,
     images: [
-      "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Seagrass Laundry Basket",
     ],
     category: "Organization",
     room: "Bedroom",
@@ -126,7 +126,7 @@ export const products: Product[] = [
     subtitle: "Hand-knotted cotton rope decor",
     price: 24.00,
     images: [
-      "https://images.unsplash.com/photo-1544207240-8b1025eb7a6c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Macrame Wall Hanging",
     ],
     category: "Decor",
     room: "Bedroom",
@@ -147,7 +147,7 @@ export const products: Product[] = [
     subtitle: "Mouth-blown glass carafe with tumbler",
     price: 24.00,
     images: [
-      "https://images.unsplash.com/photo-1616683693504-3bf76a229d15?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bedside Water Carafe",
     ],
     category: "Accessories",
     room: "Bedroom",
@@ -168,7 +168,7 @@ export const products: Product[] = [
     subtitle: "Moon phase gold-leafed ceramic dish",
     price: 12.00,
     images: [
-      "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Celestial Trinket Dish",
     ],
     category: "Decor",
     room: "Bedroom",
@@ -189,7 +189,7 @@ export const products: Product[] = [
     subtitle: "Pure essential oil room fragrance",
     price: 22.00,
     images: [
-      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=White Tea Reed Diffuser",
     ],
     category: "Decor",
     room: "Bedroom",
@@ -210,7 +210,7 @@ export const products: Product[] = [
     subtitle: "Cozy thick-knit cotton floor ottoman",
     price: 110.00,
     images: [
-      "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Cotton Knitted Pouffe",
     ],
     category: "Furniture",
     room: "Bedroom",
@@ -231,7 +231,7 @@ export const products: Product[] = [
     subtitle: "Expandable water-resistant bamboo caddy",
     price: 39.99,
     images: [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bamboo Bathtub Caddy",
     ],
     category: "Bathroom Accessories",
     room: "Bathroom",
@@ -252,7 +252,7 @@ export const products: Product[] = [
     subtitle: "Quick-dry honeycomb weave towels",
     price: 68.00,
     images: [
-      "/social-waffle-towels.png"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Waffle Towel Set",
     ],
     category: "Textiles",
     room: "Bathroom",
@@ -273,7 +273,7 @@ export const products: Product[] = [
     subtitle: "Zero-waste natural bamboo soap holders",
     price: 12.00,
     images: [
-      "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bamboo Soap Dish Set",
     ],
     category: "Accessories",
     room: "Bathroom",
@@ -294,7 +294,7 @@ export const products: Product[] = [
     subtitle: "Set of three amber glass jars with airtight lids",
     price: 28.00,
     images: [
-        "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Apothecary Glass Jars",
     ],
     category: "Accessories",
     room: "Bathroom",
@@ -315,7 +315,7 @@ export const products: Product[] = [
     subtitle: "Heavyweight cast-stone toothbrush and paste organizer",
     price: 15.00,
     images: [
-      "https://images.unsplash.com/photo-1609766857041-ed402ea80c21?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Stone Toothbrush Holder",
     ],
     category: "Bathroom",
     room: "Bathroom",
@@ -336,7 +336,7 @@ export const products: Product[] = [
     subtitle: "Six aromatherapy tablets infused with pure plant oils",
     price: 18.00,
     images: [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Essential Oil Shower Steamers",
     ],
     category: "Accessories",
     room: "Bathroom",
@@ -357,7 +357,7 @@ export const products: Product[] = [
     subtitle: "Soft thick-pile organic cotton rug with tassels",
     price: 24.00,
     images: [
-      "https://images.unsplash.com/photo-1584622650115-6001402a1140?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Tasseled Cotton Bath Mat",
     ],
     category: "Textiles",
     room: "Bathroom",
@@ -378,7 +378,7 @@ export const products: Product[] = [
     subtitle: "Natural pumice and organic bristle brush",
     price: 12.00,
     images: [
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bamboo Foot Scrubber",
     ],
     category: "Accessories",
     room: "Bathroom",
@@ -399,7 +399,7 @@ export const products: Product[] = [
     subtitle: "Handwoven rattan nesting baskets for organizing",
     price: 45.00,
     images: [
-      "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Rattan Bathroom Storage",
     ],
     category: "Organization",
     room: "Bathroom",
@@ -420,7 +420,7 @@ export const products: Product[] = [
     subtitle: "Elegant gold-framed round vanity wall mirror",
     price: 85.00,
     images: [
-      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Round Wall Mirror (Gold)",
     ],
     category: "Decor",
     room: "Bathroom",
@@ -441,7 +441,7 @@ export const products: Product[] = [
     subtitle: "Contemporary ribbed clear glass flower vase",
     price: 18.50,
     images: [
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Ribbed Glass Vase",
     ],
     category: "Decor",
     room: "Living Space",
@@ -462,7 +462,7 @@ export const products: Product[] = [
     subtitle: "Minimalist ceramic line-art planter pot",
     price: 14.00,
     images: [
-      "https://images.unsplash.com/photo-1581781862590-f9bf0ca9ffdf?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Abstract Face Planter",
     ],
     category: "Decor",
     room: "Living Space",
@@ -483,7 +483,7 @@ export const products: Product[] = [
     subtitle: "Artisanal Mediterranean olive wood serving board",
     price: 25.87,
     images: [
-      "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Olive Wood Serving Board",
     ],
     category: "Kitchen & Dining",
     room: "Living Space",
@@ -504,7 +504,7 @@ export const products: Product[] = [
     subtitle: "Stoneware-encased wooden-wick soy candles",
     price: 48.00,
     images: [
-      "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Natural Soy Candle Set",
     ],
     category: "Decor",
     room: "Living Space",
@@ -525,7 +525,7 @@ export const products: Product[] = [
     subtitle: "Hand-carved salvaged teak wood root bowl",
     price: 34.00,
     images: [
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Teak Root Serving Bowl",
     ],
     category: "Kitchen & Dining",
     room: "Living Space",
@@ -546,7 +546,7 @@ export const products: Product[] = [
     subtitle: "Set of four hand-pressed copper cup coasters",
     price: 22.00,
     images: [
-      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Copper Hammered Coasters",
     ],
     category: "Kitchen & Dining",
     room: "Living Space",
@@ -567,7 +567,7 @@ export const products: Product[] = [
     subtitle: "Chunky looped organic jute fiber rug",
     price: 115.00,
     images: [
-      "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Handwoven Jute Rug",
     ],
     category: "Rugs",
     room: "Living Space",
@@ -588,7 +588,7 @@ export const products: Product[] = [
     subtitle: "Luxuriously soft cotton velvet cushion cover",
     price: 28.00,
     images: [
-      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Velvet Mustard Cushion",
     ],
     category: "Textiles",
     room: "Living Space",
@@ -609,7 +609,7 @@ export const products: Product[] = [
     subtitle: "Mid-century gold sunburst iron wall sculpture",
     price: 38.00,
     images: [
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Golden Sun Wall Decor",
     ],
     category: "Decor",
     room: "Living Space",
@@ -630,7 +630,7 @@ export const products: Product[] = [
     subtitle: "Modern marble and natural acacia wood tray",
     price: 36.00,
     images: [
-      "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Marble & Wood Tray",
     ],
     category: "Kitchen & Dining",
     room: "Living Space",
@@ -651,7 +651,7 @@ export const products: Product[] = [
     subtitle: "Minimalist cloud-shaped adhesive key hanger",
     price: 15.00,
     images: [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Magnetic Cloud Key Holder",
     ],
     category: "Organization",
     room: "Smart Living",
@@ -672,7 +672,7 @@ export const products: Product[] = [
     subtitle: "Gravity-activated automatic kitchen grinders",
     price: 29.99,
     images: [
-      "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Gravity Salt & Pepper Set",
     ],
     category: "Kitchen Utilities",
     room: "Smart Living",
@@ -693,7 +693,7 @@ export const products: Product[] = [
     subtitle: "Wall-mounted bamboo block with continuous pull",
     price: 22.95,
     images: [
-      "https://images.unsplash.com/photo-1593693411515-c202e974eb15?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bamboo Magnetic Knife Strip",
     ],
     category: "Organization",
     room: "Smart Living",
@@ -714,7 +714,7 @@ export const products: Product[] = [
     subtitle: "Flexible warm-light LED clip book lamp",
     price: 15.00,
     images: [
-      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Rechargeable LED Book Light",
     ],
     category: "Electronics",
     room: "Smart Living",
@@ -735,7 +735,7 @@ export const products: Product[] = [
     subtitle: "Minimalist power cord and cable organizer cover",
     price: 22.00,
     images: [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Wood-Effect Cable Box",
     ],
     category: "Organization",
     room: "Smart Living",
@@ -756,7 +756,7 @@ export const products: Product[] = [
     subtitle: "Infrared automatic hands-free soap dispenser",
     price: 28.00,
     images: [
-      "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Touchless Soap Dispenser",
     ],
     category: "Electronics",
     room: "Smart Living",
@@ -777,7 +777,7 @@ export const products: Product[] = [
     subtitle: "Constant temperature hot plate mug coaster",
     price: 24.00,
     images: [
-      "https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=USB Smart Mug Warmer",
     ],
     category: "Electronics",
     room: "Smart Living",
@@ -798,7 +798,7 @@ export const products: Product[] = [
     subtitle: "Slim black tempered glass digital food scale",
     price: 18.00,
     images: [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Minimalist Kitchen Scale",
     ],
     category: "Kitchen Utilities",
     room: "Smart Living",
@@ -819,7 +819,7 @@ export const products: Product[] = [
     subtitle: "Dry-erase monthly calendar planner magnet",
     price: 14.00,
     images: [
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Magnetic Fridge Planner",
     ],
     category: "Organization",
     room: "Smart Living",
@@ -840,7 +840,7 @@ export const products: Product[] = [
     subtitle: "Weatherproof solar-powered warm LED lantern",
     price: 18.00,
     images: [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Solar Garden Lantern",
     ],
     category: "Lighting",
     room: "Smart Living",
