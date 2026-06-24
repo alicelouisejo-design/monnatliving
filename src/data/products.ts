@@ -20,7 +20,7 @@ export const products: Product[] = [
     subtitle: "Cordless rechargeable ribbed glass light",
     price: 34.50,
     images: [
-      "https://images.unsplash.com/photo-1606170033073-9091550948f5?auto=format&fit=crop&w=800&q=80"
+      "https://placehold.co/600x600/F5F0EB/C8674B?text=Mushroom+Lamp"
     ],
     category: "Lighting",
     room: "Bedroom",

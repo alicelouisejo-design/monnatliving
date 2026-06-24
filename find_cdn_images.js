@@ -1,5 +1,5 @@
 async function run() {
-  const query = "Sass Belle Ribbed Glass Mushroom Lamp cdn.shopify.com";
+  const query = "site:twentythreeliving.co.uk mushroom lamp";
   const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
   try {
     console.log(`Searching DuckDuckGo for: ${query}`);
@@ -9,16 +9,18 @@ async function run() {
       }
     });
     const html = await res.text();
-    // Extract anything that looks like a URL
-    const urlRegex = /(https?:\/\/[^\s"'<>]+)/g;
+    // Extract links
+    const regex = /href="([^"]+)"/gi;
     let match;
     const urls = [];
-    while ((match = urlRegex.exec(html)) !== null) {
+    while ((match = regex.exec(html)) !== null) {
       urls.push(match[1]);
     }
     console.log(`Total URLs found: ${urls.length}`);
     for (const u of [...new Set(urls)]) {
-      console.log("URL:", decodeURIComponent(u));
+      if (u.includes("uddg=")) {
+        console.log("Result URL:", decodeURIComponent(u.split("uddg=")[1].split("&")[0]));
+      }
     }
   } catch (e) {
     console.error("Error:", e);
