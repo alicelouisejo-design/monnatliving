@@ -108,7 +108,7 @@ export const products: Product[] = [
     subtitle: "Hand-woven seagrass basket with lid",
     price: 42.00,
     images: [
-      "https://placehold.co/600x600/F5F0EB/C8674B?text=Seagrass Laundry Basket",
+      "https://www.ancientwisdom.biz/wi/1840649.jpeg",
     ],
     category: "Organization",
     room: "Bedroom",
@@ -214,14 +214,16 @@ export const products: Product[] = [
   },
   {
     id: "cotton-knitted-pouffe",
-    title: "The Cotton Knitted Pouffe",
-    subtitle: "Cozy thick-knit cotton floor ottoman",
-    price: 110.00,
+    title: "Beer Barrel Table",
+    subtitle: "Rustic barrel-inspired table, 60x48.5cm natural wood",
+    price: 140.00,
     images: [
-      "https://placehold.co/600x600/F5F0EB/C8674B?text=Cotton Knitted Pouffe",
+      "https://www.ancientwisdom.biz/wi/1849176.jpeg",
+      "https://www.ancientwisdom.biz/wi/1849177.jpeg",
+      "https://www.ancientwisdom.biz/wi/1849178.jpeg",
     ],
     category: "Furniture",
-    room: "Bedroom",
+    room: "Living Space",
     description: "This chunky hand-knitted pouffe provides a cozy, tactile accent for reading nooks or bedside lounging. Filled with dense, shape-retaining beads and wrapped in thick braided cotton rope, it works as a seat or footrest.",
     details: [
       "100% Organic braided cotton outer cover",
@@ -235,14 +237,15 @@ export const products: Product[] = [
   },
   {
     id: "bamboo-bathtub-caddy",
-    title: "The Bamboo Bathtub Caddy",
-    subtitle: "Expandable water-resistant bamboo caddy",
-    price: 39.99,
+    title: "Natural Teak Corner Unit",
+    subtitle: "6-shelf corner display unit, 120cm natural teak",
+    price: 299.00,
     images: [
-      "https://placehold.co/600x600/F5F0EB/C8674B?text=Bamboo Bathtub Caddy",
+      "https://www.ancientwisdom.biz/wi/1850715.jpeg",
+      "https://www.ancientwisdom.biz/wi/1850740.jpeg",
     ],
-    category: "Bathroom Accessories",
-    room: "Bathroom",
+    category: "Furniture",
+    room: "Living Space",
     description: "Turn bathing into an elegant sanctuary. This expandable tub tray is made from highly water-resistant bamboo and features secure, slide-free slots for a book or tablet, a wine glass, and a comforting candle.",
     details: [
       "100% Sustainable Organic Bamboo",
