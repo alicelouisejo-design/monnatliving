@@ -16,14 +16,15 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "ribbed-mushroom-lamp",
-    title: "The Ribbed Mushroom Lamp",
-    subtitle: "Cordless rechargeable ribbed glass light",
-    price: 34.50,
+    title: "Woven Seagrass Lampshade",
+    subtitle: "Handwoven seagrass pendant lampshade",
+    price: 28.00,
     images: [
-      "https://placehold.co/600x600/F5F0EB/C8674B?text=Ribbed Mushroom Lamp",
+      "https://www.sassandbelle.co.uk/Images/Product/Default/xlarge/BASK026_A_Woven_Seagrass_Lampshade.jpg",
+      "https://www.sassandbelle.co.uk/Images/Product/Alternative/xsmall/BASK026_Lifestyle_A.jpg",
     ],
     category: "Lighting",
-    room: "Bedroom",
+    room: "Living Space",
     description: "A beautiful hand-blown ribbed borosilicate glass lamp that casts a soft, diffused glow. Cordless and rechargeable with three dimmable brightness levels, it creates a cozy evening ritual on any bedside table.",
     details: [
       "Hand-blown ribbed borosilicate glass",
