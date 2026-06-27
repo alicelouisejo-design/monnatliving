@@ -106,7 +106,7 @@ export const products: Product[] = [
   {
     id: "seagrass-laundry-basket",
     title: "The Seagrass Laundry Basket",
-    subtitle: "Hand-woven seagrass basket with lid",
+    subtitle: "Hand-woven storage basket with lid",
     price: 42.00,
     images: [
       "https://www.ancientwisdom.biz/wi/1840649.jpeg",
@@ -171,8 +171,8 @@ export const products: Product[] = [
   },
   {
     id: "celestial-trinket-dish",
-    title: "Bamboo Tealight Holder Set",
-    subtitle: "Handcrafted natural bamboo tealight holders, set of 4",
+    title: "Retro Mini Bluetooth Speaker",
+    subtitle: "Vintage gramophone-style wireless speaker",
     price: 38.00,
     images: [
       "https://www.ancientwisdom.biz/wi/1871471.jpeg",
